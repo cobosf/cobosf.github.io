@@ -1,2 +1,356 @@
-<h1>Francisco Cobos</h1>
-<p>My personal website.</p>
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Francisco Cobos</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+
+  <style>
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: 'Inter', sans-serif;
+      background: #0b0b0b;
+      color: #f4f4f4;
+      line-height: 1.7;
+    }
+
+    a {
+      text-decoration: none;
+      color: inherit;
+    }
+
+    nav {
+      position: fixed;
+      top: 0;
+      width: 100%;
+      backdrop-filter: blur(12px);
+      background: rgba(11,11,11,0.7);
+      border-bottom: 1px solid rgba(255,255,255,0.06);
+      z-index: 100;
+    }
+
+    .nav-container {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      padding: 18px 0;
+    }
+
+    .logo {
+      font-weight: 700;
+      letter-spacing: -0.5px;
+    }
+
+    .menu {
+      display: flex;
+      gap: 24px;
+      color: #b9b9b9;
+    }
+
+    .menu a:hover {
+      color: white;
+    }
+
+    section {
+      width: 90%;
+      max-width: 1100px;
+      margin: auto;
+      padding: 120px 0;
+    }
+
+    ##inicio {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  background: #0b0b0b;
+    }
+
+    .hero {
+      max-width: 800px;
+    }
+
+    h1 {
+      font-size: 5rem;
+      line-height: 0.95;
+      letter-spacing: -4px;
+      margin-bottom: 24px;
+    }
+
+    .hero p {
+      color: #b0b0b0;
+      font-size: 1.25rem;
+      max-width: 700px;
+      margin-bottom: 40px;
+    }
+
+    .button {
+      display: inline-block;
+      padding: 14px 24px;
+      border-radius: 14px;
+      background: white;
+      color: black;
+      font-weight: 600;
+      transition: 0.3s;
+    }
+
+    .button:hover {
+      transform: translateY(-2px);
+      background: #e7e7e7;
+    }
+
+    h2 {
+      font-size: 2.7rem;
+      margin-bottom: 20px;
+      letter-spacing: -2px;
+    }
+
+    .section-text {
+      color: #b5b5b5;
+      max-width: 800px;
+      margin-bottom: 50px;
+      font-size: 1.05rem;
+    }
+
+    .gallery {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+      gap: 20px;
+    }
+
+    .gallery-item {
+      aspect-ratio: 4/3;
+      border-radius: 24px;
+      overflow: hidden;
+      background: linear-gradient(135deg, #1c1c1c, #111111);
+      border: 1px solid rgba(255,255,255,0.06);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      color: #666;
+      transition: 0.3s;
+    }
+    .gallery-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+    .gallery-item:hover {
+      transform: translateY(-4px);
+      border-color: rgba(255,255,255,0.15);
+    }
+
+    .about-box {
+      background: #121212;
+      border: 1px solid rgba(255,255,255,0.06);
+      padding: 40px;
+      border-radius: 28px;
+    }
+
+    .about-box p {
+      color: #b7b7b7;
+      margin-bottom: 20px;
+    }
+
+    footer {
+      border-top: 1px solid rgba(255,255,255,0.06);
+      padding: 40px;
+      text-align: center;
+      color: #777;
+    }
+
+    @media(max-width: 768px) {
+      h1 {
+        font-size: 3rem;
+      }
+
+      h2 {
+        font-size: 2rem;
+      }
+
+      .menu {
+        gap: 14px;
+        font-size: 0.9rem;
+      }
+
+      section {
+        padding: 90px 0;
+      }
+    }
+  </style>
+</head>
+<body>
+
+<nav>
+  <div class="nav-container">
+    <div class="logo">Francisco Cobos</div>
+
+    <div class="menu">
+      <a href="#inicio">Inicio</a>
+      <a href="#galeria">Galería</a>
+      <a href="#sobre-mi">Sobre mí</a>
+    </div>
+  </div>
+</nav>
+
+<section id="inicio">
+  <div class="hero">
+    <h1>Francisco<br>Cobos</h1>
+
+    <p>
+      <strong>Systems thinking aterrizado en la realidad operacional</strong><br><br>
+
+      Bienvenidos.<br>
+      Soy Francisco Cobos y durante más de 20 años he trabajado entre operaciones, logística, tecnología, hospitalidad, plataformas y ecosistemas TravelTech, moviéndome siempre en entornos donde complejidad, negocio y ejecución se cruzan constantemente.
+      <br><br>
+      Este espacio es simplemente una mezcla de experiencias, reflexiones y momentos personales que, de una forma u otra, han influido en mi manera de entender el trabajo, las organizaciones, la tecnología y la complejidad del mundo real.
+      <br><br>
+      🐢 <em>Poc a Poc — Little by Little</em>
+      <br><br>
+      You can also see the same content but in English on my Medium or follow X
+    </p>
+
+    <a class="button" href="#sobre-mi">Sobre mí</a>
+  </div>
+</section>
+
+<section id="galeria">
+  <h2>Galería</h2>
+
+  <p class="section-text">
+    Espacio visual para fotografías, proyectos, experiencias y momentos relevantes.
+  </p>
+
+  <div class="gallery">
+
+    <div class="gallery-item"><img src="img/1.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/2.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/3.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/4.JPG" alt=""></div>
+    <div class="gallery-item"><img src="img/5.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/6.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/7.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/8.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/9.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/10.WEBP" alt=""></div>
+    <div class="gallery-item"><img src="img/11.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/12.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/13.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/14.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/15.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/16.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/17.WEBP" alt=""></div>
+    <div class="gallery-item"><img src="img/18.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/19.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/20.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/21.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/22.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/23.webp" alt=""></div>
+    <div class="gallery-item"><img src="img/24.webp" alt=""></div> 
+
+  </div>
+</section>
+
+</section>
+
+<section id="sobre-mi">
+  <h2>Sobre mí</h2>
+
+  <div class="about-box">
+    <p><strong></strong></p>
+
+    <p>
+      A lo largo de mi trayectoria he trabajado en entornos muy distintos:
+      industria, transporte, logística, turismo, marketplaces, startups, producto, operaciones y grandes ecosistemas tecnológicos internacionales.
+    </p>
+
+    <p>
+      Mi carrera nunca siguió un camino tradicional ni encajó completamente dentro de una sola categoría. Y quizá precisamente por eso terminé desarrollando una visión muy transversal sobre organizaciones, operaciones y sistemas complejos.
+    </p>
+
+    <p>
+      Antes de trabajar en plataformas y tecnología, crecí muy cerca de operaciones reales:
+      transporte industrial,
+      logística,
+      mantenimiento,
+      coordinación,
+      dependencias,
+      ejecución.
+    </p>
+
+    <p>
+      Mucho antes de escuchar términos como “transformación organizativa” o “systems thinking”, ya convivía con sistemas donde pequeños errores podían afectar operaciones completas.
+    </p>
+
+    <p>
+      Con el tiempo, esa forma de observar complejidad evolucionó hacia entornos de producto, delivery, TravelTech y transformación organizativa.
+    </p>
+
+    <p>
+      Hoy me interesa especialmente la intersección entre:
+    </p>
+
+    <ul>
+      <li>Negocio</li>
+      <li>Operaciones</li>
+      <li>Producto</li>
+      <li>Tecnología</li>
+      <li>Liderazgo</li>
+      <li>Ejecución</li>
+    </ul>
+
+    <p style="margin-top: 30px;">
+  Creo profundamente en:
+</p>
+
+    <ul>
+      <li>La claridad operacional</li>
+      <li>El pragmatismo</li>
+      <li>El pensamiento crítico</li>
+      <li>La simplificación de complejidad innecesaria</li>
+    </ul>
+
+    <p style="margin-top: 30px;">
+  También creo que muchas organizaciones...
+</p>
+
+    <ul>
+      <li>La fricción</li>
+      <li>Desalineamiento</li>
+      <li>Ambigüedad</li>
+      <li><Em></Em>structuras difusas</li>
+      <li>Modelos operativos que dejan de escalar correctamente</li>
+    </ul>
+
+    <p style="margin-top: 30px;">
+  Este blog no pretende ser un espacio de “gurús”, fórmulas mágicas o teorías perfectas.
+</p>
+
+    <p>
+      
+    </p>
+
+    <p>
+      🐢 <em>Poc a Poc — Little by Little</em>
+    </p>
+  </div>
+</section>
+
+<footer>
+  © 2026 Francisco Cobos · fcobos.com · info@fcobos.com
+</footer>
+
+</body>
+</html>
